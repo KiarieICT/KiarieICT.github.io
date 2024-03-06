@@ -288,22 +288,37 @@ body .contacts form  input[type="submit"]:hover {
     background-color: #45a049;
 }
 
-@media (max-width:800px){
+@media (max-width:1100px){
     header{
         visibility: hidden;
     }
     body .home{
         display: grid;
         justify-items: center;
-        padding-left: 2%;
+        padding-left: 20%;
         height: 550px;
+    }
+    body .home .info{
+        float:inline-end;
     }
     body .home .about{
         float: left;
         border: none;
         overflow: visible;
         margin-top: -15%;
-        margin-left: -40%;
+    
+        height: 300px;
+        width: 300px;
+    }
+    body .home .about .img{
+        height: 120%;
+        width: 120%;
+        justify-content: center;
+    }
+    body .home .about .img img{
+        height: 100%;
+        width: 70%;
+        justify-content: center;
     }
     body .services{
         height: 2500px;
@@ -314,7 +329,7 @@ body .contacts form  input[type="submit"]:hover {
         display: grid;
         justify-content: center;
         height: 30%;
-
+        padding-left: 40px;
     }
     body .services .skillsDetails .skill{
         width: 70%;
