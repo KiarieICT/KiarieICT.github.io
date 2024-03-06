@@ -288,3 +288,25 @@ body .contacts form input[type="submit"]{
 body .contacts form  input[type="submit"]:hover {
     background-color: #45a049;
 }
+
+@media (max-width:800px){
+    header{
+        visibility: hidden;
+    }
+    body .home{
+        display: grid;
+        justify-items: center;
+        padding-left: 2%;
+    }
+    body .home .about{
+        float: left;
+        border: none;
+        overflow: visible;
+        margin-top: -15%;
+        margin-left: -40%;
+    }
+}
+
+
+
+
