@@ -1,0 +1,290 @@
+body{
+   
+    color: #fff;
+    background-color:   rgba(0, 0, 0, 0.9);
+    width: fit-content;
+    margin: 0;
+    padding: 0%;
+        overflow-x: hidden;
+        
+    
+    
+
+}
+header{
+    position: relative;
+    display: grid;
+    align-items: center;
+    width: 3.5%;
+    position: fixed;
+    margin-left:2%;
+    margin-top:8%;
+    margin-right: 2%;
+    background-color:#926624; 
+    float: left;
+    height: 60%;
+    
+}
+
+section header .navigation{
+    display: grid;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    }
+section header .navigation a img{
+    height: 90%;
+    width: 90%;
+
+}
+section header .navigation a:hover{
+    color: aqua;
+}
+
+body .home{
+    height: 90vh;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0%;
+    background-color: rgb( 3,39,39); 
+    
+    padding-right: 12%;
+
+}
+body .home .info{
+    margin-top: 15%;
+    font-family: Arial,sans-serif,georgia;
+}
+body .home .info ul {
+    padding-top: 30px;
+}
+
+body .home .info ul a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin-left: 40%;
+    margin-top: 30px;
+}
+body .home .info a:hover{
+    color: aqua;
+}
+body .home .about{
+    margin-top: 5%;
+    border-radius: 50% ;
+    height: 60vh;
+    width: 30%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+    background-color:  transparent;
+    
+   
+      
+    
+}
+body .home .about .img{
+  height: 100%;
+  width: 70%;
+  justify-content: center;
+    
+}
+body .home .about .img img{
+    padding-bottom: 10%;
+   padding-top: -15%;
+    height: 100%;
+}
+
+body .services{
+    background-color:rgb(162, 210, 210);  
+    background-size: cover;
+   height: 170vh;
+   padding-top: 7%;
+    
+}
+body .services .skillsHeader{
+    display: flex;
+    justify-content: center;
+    font-family: Arial,sans-serif,georgia;
+    height: 5%;
+    margin-top: -5%;
+    margin-left: 5%;
+}
+
+body .services .skillsHeader h3{
+    font-size: 24;
+    margin-right: 90%;
+    color: #3c3b51;
+}
+body .services .skillsDetails{
+    display: flex;
+    justify-content: space-evenly;
+    height: 50%;
+    margin-left: 6%;
+
+}
+body .services .skillsDetails .skill{
+    background-color:   rgb(34, 131, 131);
+ border: double #2f2d52;
+    height: 40%;
+    padding: 2%;
+    width: 20%;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    display: grid;
+    justify-content: center;
+
+}
+
+body .services .skillsDetails .skill h4{
+    margin-left: 25%;
+}
+body .services .projectsDetails{
+    padding-top: 4%;
+    width: 100%;
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 6%;
+    margin-top: -1%;
+
+}
+body .services .projectsDetails .project1{
+    display: flex;
+    margin-inline-start: 7%;
+    
+}
+
+
+body .services .projectsDetails .project1 .project{
+    display:grid;
+    justify-content: center;
+    height: 250px;
+    width: 25%;
+    text-decoration: none;
+    color: white;
+    border: solid #3c3b51;
+    border-radius: 5%;
+    overflow: hidden;
+    background-color:  rgb(34, 131, 131);
+    margin-bottom: 3%;
+    margin-right: 5%;
+
+}
+body .services .projectsDetails .project .img1{
+    height: 80%;
+  width: 100%;
+  justify-content: center;
+  background-color: #2f2d52;
+
+}
+body .services .projectsDetails .project .img1 a img{
+    padding-bottom: 10%;
+    padding-top: -15%;
+     height: 100%;
+     width: 100%;
+     display: flex;
+     
+
+}
+
+body .services .projectsDetails .project .projectname{
+    height: 10%;
+    justify-content: center;
+    justify-items: center;
+}
+
+body .services .projectsDetails .project a h4{
+      margin-left: 25%;
+      text-decoration: none;
+      color: white;
+}
+
+
+
+
+body .aboutme{
+    height: 50vh;
+    background-color: rgb(3, 39, 39) ;
+    margin-top: -1.5%;
+    display: flex;
+
+}
+
+body .aboutme .aboutME{
+    display: grid;
+    background: transparent;
+    margin-inline-start: 5%;
+    padding: 2%;
+    height: 100%;
+    width: 40%;
+    padding: 3%;
+}
+body .aboutme .connect{
+    background-color: rgb(162, 210, 210);
+    height: 60%;
+    margin-top: 4%;
+    width: 42%;
+    color: #3c3b51;
+    padding: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body .contacts{
+    height: 100vh;
+    background-color:   rgb(162, 210, 210); 
+    margin-top: -1.7%;
+    color: #3c3b51;
+    
+    
+    
+}
+body .contacts h2{
+ margin-left: 7.6%;
+}
+body .contacts form{
+    max-width: 400px;
+    margin: 0 auto;
+}
+body .contacts form input[type="text"],textarea{
+    width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+}
+body .contacts form input[type="submit"]{
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+}
+
+body .contacts form  input[type="submit"]:hover {
+    background-color: #45a049;
+}
