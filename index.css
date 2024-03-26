@@ -2,57 +2,73 @@ body{
    
     color: #fff;
     background-color:   rgba(0, 0, 0, 0.9);
-    width: fit-content;
     margin: 0;
-    padding: 0%;
-        overflow-x: hidden;
-        
-    
-    
+    padding: 0%;  
 
 }
 header{
-    position: relative;
+    
     display: grid;
-    align-items: center;
-    width: 3.5%;
+    justify-content: space-evenly;
+    width: 35px;
+    height: 45vh;
     position: fixed;
-    margin-left:2%;
-    margin-top:8%;
-    margin-right: 2%;
-    background-color:#926624; 
-    float: left;
-    height: 60%;
+    border-top-right-radius: 80% 10% ;
+    border-bottom-right-radius:80% 10%;
+    border-right:solid #2f2d52;
+    margin-top: 150px;
+    
     
 }
 
 section header .navigation{
     display: grid;
     justify-content: space-evenly;
-    align-items: flex-end;
-    }
-section header .navigation a img{
-    height: 90%;
-    width: 90%;
+    align-items: center;
+    padding: 10px;
+
 
 }
-section header .navigation a:hover{
-    color: aqua;
+section header .navigation .navlogo{
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+section header .navigation .navlogo a img{
+  height: 35px;   
+  width: 35px;
+}
+section header .navigation .navlogo .tooltiptext{
+    visibility: hidden;
+    color: #3c3b51;
+    text-decoration: none;
+    text-decoration-line: none;
+    font-size: 20px;
+    background-color: #fff;
+    padding: 5px 20px;
+}
+section header .navigation .navlogo:hover .tooltiptext{
+    visibility: visible;
+
+
 }
 
 body .home{
-    height: 90vh;
     display: flex;
-    justify-content: flex-end;
-    margin-top: 0%;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color: rgb( 3,39,39); 
-    
-    padding-right: 12%;
+    min-height: 90vh;
 
 }
 body .home .info{
-    margin-top: 15%;
+    padding: 20px;
+    margin: 20px;
     font-family: Arial,sans-serif,georgia;
+    margin-top: 70px;
+    width: 600px;
+  
 }
 body .home .info ul {
     padding-top: 30px;
@@ -69,14 +85,14 @@ body .home .info a:hover{
     color: aqua;
 }
 body .home .about{
-    margin-top: 5%;
+    margin: 20px;
     border-radius: 50% ;
-    height: 60vh;
-    width: 30%;
+    height: 300px;
+    width: 300px;
     overflow: hidden;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 10%;
+    padding: 20px;
+    
     background-color:  transparent;
     
    
@@ -91,48 +107,50 @@ body .home .about .img{
 }
 body .home .about .img img{
     padding-bottom: 10%;
-   padding-top: -15%;
+    padding-top: -15%;
     height: 100%;
 }
 
 body .services{
     background-color:rgb(162, 210, 210);  
-    background-size: cover;
-   height: 170vh;
-   padding-top: 7%;
+   justify-content: space-evenly;
+   height: fit-content;
+   align-items: center;
+
     
 }
 body .services .skillsHeader{
     display: flex;
+    align-items: center;
     justify-content: center;
+
     font-family: Arial,sans-serif,georgia;
-    height: 5%;
-    margin-top: -5%;
-    margin-left: 5%;
 }
 
 body .services .skillsHeader h3{
     font-size: 24;
-    margin-right: 90%;
     color: #3c3b51;
+
 }
 body .services .skillsDetails{
     display: flex;
-    justify-content: space-evenly;
-    height: 50%;
-    margin-left: 6%;
+    flex-wrap: wrap;
+    
+    margin: 20px;
+    
+    
 
 }
 body .services .skillsDetails .skill{
     background-color:   rgb(34, 131, 131);
- border: double #2f2d52;
-    height: 40%;
-    padding: 2%;
-    width: 20%;
+    border: double #2f2d52;
+    height: 200px;
+    padding: 35px;
+    width: 240px;
     border-top-left-radius: 40%;
     border-bottom-right-radius: 40%;
-    display: grid;
-    justify-content: center;
+    font-size: 18px;
+    margin: 35px;
 
 }
 
@@ -140,18 +158,14 @@ body .services .skillsDetails .skill h4{
     margin-left: 25%;
 }
 body .services .projectsDetails{
-    padding-top: 4%;
-    width: 100%;
-    display: grid;
-    justify-content: space-evenly;
-    margin-left: 6%;
-    margin-top: -1%;
-
+  
+    padding: 20px;
+    
 }
 body .services .projectsDetails .project1{
-    display: flex;
-    margin-inline-start: 7%;
-    
+   display: flex; 
+   flex-wrap: wrap;
+   
 }
 
 
@@ -159,22 +173,22 @@ body .services .projectsDetails .project1 .project{
     display:grid;
     justify-content: center;
     height: 250px;
-    width: 25%;
+    width: 350px;
     text-decoration: none;
     color: white;
-    border: solid #3c3b51;
-    border-radius: 5%;
+
     overflow: hidden;
     background-color:  rgb(34, 131, 131);
-    margin-bottom: 3%;
-    margin-right: 5%;
+    margin: 20px;
+
 
 }
 body .services .projectsDetails .project .img1{
-    height: 80%;
+    height: 200px;
   width: 100%;
   justify-content: center;
   background-color: #2f2d52;
+  margin: 2px;
 
 }
 body .services .projectsDetails .project .img1 a img{
@@ -203,10 +217,11 @@ body .services .projectsDetails .project a h4{
 
 
 body .aboutme{
-    height: 50vh;
     background-color: rgb(3, 39, 39) ;
-    margin-top: -1.5%;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
 
 }
 
@@ -214,36 +229,20 @@ body .aboutme .aboutME{
     display: grid;
     background: transparent;
     margin-inline-start: 5%;
-    padding: 2%;
-    height: 100%;
-    width: 40%;
-    padding: 3%;
+    padding: 20px;
+    height: 250px;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
 }
 body .aboutme .connect{
     background-color: rgb(162, 210, 210);
-    height: 60%;
-    margin-top: 4%;
-    width: 42%;
+    height: 200px;
+    width: 350px;
     color: #3c3b51;
-    padding: 1%;
+    padding: 20px;
+    margin: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -251,20 +250,21 @@ body .aboutme .connect{
 
 
 body .contacts{
-    height: 100vh;
     background-color:   rgb(162, 210, 210); 
-    margin-top: -1.7%;
     color: #3c3b51;
-    
-    
+    min-height: 95vh;
+    justify-content: center;
+    align-items: center;
+ 
     
 }
 body .contacts h2{
  margin-left: 7.6%;
 }
 body .contacts form{
-    max-width: 400px;
-    margin: 0 auto;
+min-width: 300px;
+max-width: 400px;
+margin-left: 30%;
 }
 body .contacts form input[type="text"],textarea{
     width: 100%;
@@ -290,67 +290,18 @@ body .contacts form  input[type="submit"]:hover {
 
 @media (max-width:1100px){
     header{
-        visibility: hidden;
-    }
-    body .home{
-        display: grid;
-        justify-items: center;
-        padding-left: 20%;
-        height: 550px;
-    }
-    body .home .info{
-        float:inline-end;
-    }
-    body .home .about{
-        float: left;
-        border: none;
-        overflow: visible;
-        margin-top: -15%;
-    
-        height: 300px;
-        width: 300px;
-    }
-    body .home .about .img{
-        height: 120%;
-        width: 120%;
-        justify-content: center;
-    }
-    body .home .about .img img{
-        height: 100%;
-        width: 70%;
-        justify-content: center;
-    }
-    body .services{
-        height: 2500px;
-    }
-    
-
-    body .services .skillsDetails{
-        display: grid;
-        justify-content: center;
-        height: 30%;
-        padding-left: 40px;
-    }
-    body .services .skillsDetails .skill{
-        width: 70%;
-        height: 150px;
-        border-radius: 0%;
+        visibility: visible;
     }
 
     body .services .projectsDetails .project1{
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
         
-        width: 100%;
-        display: grid;
-       
-    
-    }
-    body .services .projectsDetails .project1 .project{
-        width: 70%;
-    }
-
-
+     }
+     body .contacts form{
+        justify-content: center;
+        margin-left: 11%;
+     }
+     
 }
-
-
-
-
