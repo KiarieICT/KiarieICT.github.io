@@ -13,10 +13,8 @@ header{
     width: 35px;
     height: 45vh;
     position: fixed;
-    border-top-right-radius: 80% 10% ;
-    border-bottom-right-radius:80% 10%;
-    border-right:solid #2f2d52;
-    margin-top: 150px;
+   
+    margin-top: 130px;
     
     
 }
@@ -26,6 +24,9 @@ section header .navigation{
     justify-content: space-evenly;
     align-items: center;
     padding: 10px;
+    border-top-right-radius: 80% 10% ;
+    border-bottom-right-radius:80% 10%;
+    border-right: #2f2d52;
 
 
 }
@@ -33,6 +34,7 @@ section header .navigation .navlogo{
     display: flex;
     align-items: center;
     height: 30px;
+    margin-left: -5px;
 }
 
 section header .navigation .navlogo a img{
@@ -42,14 +44,18 @@ section header .navigation .navlogo a img{
 section header .navigation .navlogo .tooltiptext{
     visibility: hidden;
     color: #3c3b51;
-    text-decoration: none;
     text-decoration-line: none;
-    font-size: 20px;
+    font-size: 18px;
     background-color: #fff;
-    padding: 5px 20px;
+    padding: 3px 20px;
+    
+}
+section header .navigation .navlogo .tooltiptext a{
+    text-decoration: none;
 }
 section header .navigation .navlogo:hover .tooltiptext{
     visibility: visible;
+    opacity: 1;
 
 
 }
@@ -62,12 +68,22 @@ body .home{
     min-height: 90vh;
 
 }
+body .home .station{
+    height: 300px;
+    width: 400px;
+    margin-top: 70px;
+    
+}
+body .home .station img{
+    height: 90%;
+    width: 80%;
+}
 body .home .info{
     padding: 20px;
     margin: 20px;
     font-family: Arial,sans-serif,georgia;
     margin-top: 70px;
-    width: 600px;
+    width: 400px;
   
 }
 body .home .info ul {
@@ -86,9 +102,8 @@ body .home .info a:hover{
 }
 body .home .about{
     margin: 20px;
-    border-radius: 50% ;
     height: 300px;
-    width: 300px;
+    width: 200px;
     overflow: hidden;
     justify-content: center;
     padding: 20px;
@@ -99,15 +114,8 @@ body .home .about{
       
     
 }
-body .home .about .img{
-  height: 100%;
-  width: 70%;
-  justify-content: center;
-    
-}
-body .home .about .img img{
-    padding-bottom: 10%;
-    padding-top: -15%;
+
+body .home .about img{
     height: 100%;
 }
 
@@ -242,6 +250,23 @@ body .aboutme .connect{
     color: #3c3b51;
     padding: 20px;
     margin: 10px;
+    display: grid;
+}
+
+body .aboutme .connect .links{
+display: flex;
+flex-wrap: wrap;
+
+}
+body .aboutme .connect .links .platform{
+    display: flex;
+    margin: 5px;
+    padding: 2px 5px;
+}
+
+body .aboutme .connect .links h4 a{
+    text-decoration: none;
+    
 }
 
 
@@ -255,16 +280,13 @@ body .contacts{
     min-height: 95vh;
     justify-content: center;
     align-items: center;
+    display: grid;
  
-    
-}
-body .contacts h2{
- margin-left: 7.6%;
 }
 body .contacts form{
-min-width: 300px;
+
 max-width: 400px;
-margin-left: 30%;
+
 }
 body .contacts form input[type="text"],textarea{
     width: 100%;
@@ -292,6 +314,9 @@ body .contacts form  input[type="submit"]:hover {
     header{
         visibility: visible;
     }
+    body .services .skillsDetails{
+    justify-content: center;
+    }
 
     body .services .projectsDetails .project1{
         display: flex; 
@@ -299,9 +324,10 @@ body .contacts form  input[type="submit"]:hover {
         justify-content: center;
         
      }
-     body .contacts form{
+     body .contacts{
+        
         justify-content: center;
-        margin-left: 11%;
+        align-items: center;
      }
-     
+    
 }
