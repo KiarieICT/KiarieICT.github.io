@@ -86,19 +86,22 @@ body .home .info{
     width: 400px;
   
 }
-body .home .info ul {
-    padding-top: 30px;
-}
 
-body .home .info ul a{
+body .home .info a{
     text-decoration: none;
     font-size: 20px;
     color: white;
-    margin-left: 40%;
-    margin-top: 30px;
+    border: solid #2f2d52;
+    border-color: aqua;
+    border-top-left-radius: 10px 10px;
+    padding: 6px 14px;
+
+    
+   
+    
 }
 body .home .info a:hover{
-    color: aqua;
+    color:#2f2d52;
 }
 body .home .about{
     margin: 20px;
@@ -136,14 +139,14 @@ body .services .skillsHeader{
 }
 
 body .services .skillsHeader h3{
-    font-size: 24;
+    font-size: 24px;
     color: #3c3b51;
 
 }
 body .services .skillsDetails{
     display: flex;
     flex-wrap: wrap;
-    
+   
     margin: 20px;
     
     
@@ -201,7 +204,7 @@ body .services .projectsDetails .project .img1{
 }
 body .services .projectsDetails .project .img1 a img{
     padding-bottom: 10%;
-    padding-top: -15%;
+    position: relative;
      height: 100%;
      width: 100%;
      display: flex;
@@ -217,7 +220,7 @@ body .services .projectsDetails .project .projectname{
 
 body .services .projectsDetails .project a h4{
       margin-left: 25%;
-      text-decoration: none;
+      text-decoration: overline;
       color: white;
 }
 
@@ -256,6 +259,7 @@ body .aboutme .connect{
 body .aboutme .connect .links{
 display: flex;
 flex-wrap: wrap;
+justify-content: center;
 
 }
 body .aboutme .connect .links .platform{
@@ -317,7 +321,7 @@ body .contacts form  input[type="submit"]:hover {
     body .services .skillsDetails{
     justify-content: center;
     }
-
+ 
     body .services .projectsDetails .project1{
         display: flex; 
         flex-wrap: wrap;
